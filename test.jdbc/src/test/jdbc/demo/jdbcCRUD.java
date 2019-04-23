@@ -41,6 +41,7 @@ public class jdbcCRUD {
 				System.out.println(id+dept_name);
 			}
 			
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

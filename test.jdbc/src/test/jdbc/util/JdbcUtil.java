@@ -80,6 +80,34 @@ public class JdbcUtil {
 		}
 		
 	}
+	
+	public static void close(Connection con, Statement stmt) {
+		//Íí¿ªÔç¹Ø
+		try {
+			if (stmt!=null) {
+				stmt.close();
+			}
+		} catch (Exception e2) {
+			// TODO: handle exception
+			e2.printStackTrace();
+		}finally {
+			stmt=null;
+			
+		}
+		try {
+			if (con!=null) {
+				con.close();
+			}
+		}
+		catch (Exception e3) {
+			// TODO: handle exception
+			e3.printStackTrace();
+		} finally {
+			// TODO: handle finally clause
+			con=null;
+		}
+		
+	}
     public static Connection getConnection() {
     	Connection con=null;
     	//			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
