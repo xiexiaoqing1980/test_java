@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.List;
 
-import main.entity.TestTable;
+import main.entity.javabean.Bank;
 import test.jdbc.dao.DeptDao;
 import test.jdbc.util.JdbcUtil;
 
@@ -99,7 +99,7 @@ public class DeptDaoImp  implements DeptDao{
 	}
 
 	@Override
-	public void save(List<TestTable> list) {
+	public void save(List<Bank> list) {
 		// TODO Auto-generated method stub
 		Connection conn=null;
 		PreparedStatement statement=null;
@@ -114,9 +114,9 @@ public class DeptDaoImp  implements DeptDao{
 //				TestTable table=list.get(i);
 //			}
 			
-			for(TestTable t1:list){
-				statement.setString(1, t1.getName());
-				statement.setString(2, t1.getPassword());
+			for(Bank t1:list){
+				statement.setString(1, t1.getFname());
+				statement.setInt(2, t1.getFamount());
 				statement.addBatch();
 				result=statement.executeBatch();
 				statement.clearBatch();

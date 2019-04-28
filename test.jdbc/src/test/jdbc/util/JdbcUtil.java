@@ -96,7 +96,7 @@ public class JdbcUtil {
 		}
 		try {
 			if (con!=null) {
-				con.close();
+				con.close();   //c3po的关闭使用了装饰者的模式，不是真正意义上的关闭
 			}
 		}
 		catch (Exception e3) {

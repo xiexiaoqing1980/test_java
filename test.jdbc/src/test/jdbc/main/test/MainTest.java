@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import main.entity.TestTable;
+import main.entity.javabean.Bank;
 import test.jdbc.dao.DeptDao;
 import test.jdbc.dao.implement.DeptDaoImp;
 
@@ -20,9 +20,9 @@ public class MainTest {
 	
 	@Test
 	public void testbatch(){
-		List<TestTable> t1=new ArrayList<>();
+		List<Bank> t1=new ArrayList<>();
 		for(int i=0;i<10;i++){
-			TestTable table=new TestTable("a"+i, "100"+i);
+			Bank table=new Bank("a"+i, 1+i);
 			t1.add(table);
 		}
 		DeptDao deptDao=new DeptDaoImp();

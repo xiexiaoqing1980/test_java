@@ -2,7 +2,7 @@ package test.jdbc.dao;
 
 import java.util.List;
 
-import main.entity.TestTable;
+import main.entity.javabean.Bank;
 
 public interface DeptDao {
 	
@@ -11,5 +11,5 @@ public interface DeptDao {
 	public void login(String name,String password);
 	
 	//批量保存插入的操作
-	public void save(List<TestTable> list);
+	public void save(List<Bank> list);
 }
