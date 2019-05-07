@@ -36,7 +36,7 @@ public class cookies extends HttpServlet {
 		//给响应添加cookis
 		//Set-Cookie: name=xinna,发送cookie到浏览器端保存
 		response.addCookie(new Cookie("name", "xinna"));
-		response.addCookie(new Cookie("age", "18"));
+		response.addCookie(new Cookie("name", "18"));
 		response.getWriter().write("get cookies");
 		
 		
