@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+   
+  
+    <bean id="orderDao" class="com.itheima.aop.test.annotation.OrderDaoImpl">
+     </bean>
+    
+    <bean id="A" class="com.itheima.aop.test.xml.A">
+   
+    </bean>
+    
+    <!-- 配置切面类  ,可以直接在切面类的上面写个@aspect的标志-->
+    <!-- <bean id="myAspectXml" class="com.itheima.aop.test.annotation.MyAspectXmlanno"></bean> -->
+    
+    <!-- 开启自动代理 -->
+    <aop:aspectj-autoproxy/>
+   
+    
+   
+</beans>

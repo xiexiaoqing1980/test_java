@@ -1,4 +1,4 @@
-package com.itheima.aop.test.xml;
+package com.itheima.aop.test.annotation;
 
 
 import javax.annotation.Resource;
@@ -8,8 +8,10 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.itheima.aop.test.xml.A;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext4.xml")
+@ContextConfiguration("classpath:applicationContext5.xml")
 public class test {
 	@Resource(name="orderDao")
 //    private OrderDao orderDao;

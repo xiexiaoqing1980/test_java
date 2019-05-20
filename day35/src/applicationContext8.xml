@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:p="http://www.springframework.org/schema/p"
+     xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+         http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/context 
+         http://www.springframework.org/schema/context/spring-context.xsd
+             http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+        ">
+	
+	<!-- 开启注解的扫描 -->
+	<context:component-scan base-package="com.it.heima"/>
+	
+	<!-- 配置spring内部默认的连接池 -->
+   	<!-- <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   	      <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+   	      <property name="url" value="jdbc:mysql://localhost/test_databasse"/>
+   	      <property name="username" value="root"/>
+   	      <property name="password" value="123456"/>
+   	      
+   	</bean> -->
+   	
+   	<!-- c3po的配置 -->
+   	
+   	<!--引入外部的property文件  -->
+   	
+   	<bean id="accountdao" class="com.it.heima.spring.jdbc.transcation.annotation.transferdaoimpl">
+   	   <property name="dataSource" ref="datasource"></property>
+   	</bean>
+   	
+   	<context:property-placeholder location="classpath:jdbc.properties"/>
+   	
+   	<bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+   	      <property name="driverClass" value="${driverClass}"/>
+   	      <property name="jdbcUrl" value="${url}"/>
+   	      <property name="user" value="${user}"/>
+   	      <property name="password" value="${password}"/>
+   	</bean>
+	
+	<!--配置事物管理器  -->
+	<bean id="transcationmanager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	    <property name="dataSource" ref="datasource" />
+	
+	</bean>
+	<tx:annotation-driven transaction-manager="transcationmanager"/>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

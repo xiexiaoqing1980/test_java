@@ -1,9 +1,6 @@
-package com.itheima.aop.test.xml;
+package com.itheima.aop.test.annotation;
 
-import org.springframework.stereotype.Repository;
-
-@Repository(value="")
-public class OrderDaoImpl extends A implements OrderDao{
+public class OrderDaoImpl implements OrderDao{
 
 	
 	@Override
@@ -34,11 +31,7 @@ public class OrderDaoImpl extends A implements OrderDao{
         int c=1/0;
     }
 
-	@Override
-	public void test1() {
-		// TODO Auto-generated method stub
-		super.test1();
-	}
+	
     
     
     

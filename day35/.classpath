@@ -17,5 +17,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/就业班/04-JavaWeb知识(学习12天)/08-Spring框架(学习4天)/Spring_day01_下载,概述.监听器/Spring_day01_下载,概述.监听器/Sping_day01_下载,概述.监听器/Spring-day01/资料/spring-framework-4.2.4.RELEASE-dist/spring-framework-4.2.4.RELEASE/libs/spring-jdbc-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/就业班/04-JavaWeb知识(学习12天)/08-Spring框架(学习4天)/Spring_day01_下载,概述.监听器/Spring_day01_下载,概述.监听器/Sping_day01_下载,概述.监听器/Spring-day01/资料/spring-framework-4.2.4.RELEASE-dist/spring-framework-4.2.4.RELEASE/libs/spring-tx-4.2.4.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
