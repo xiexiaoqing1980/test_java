@@ -4,9 +4,7 @@ public class quicksort {
 	
 	public static void quickSort1(int[] arr) {
 		if(arr==null || arr.length<=1) return;
-		
 		sort2(arr, 0, arr.length-1);
-		
 		
 	}
 	
