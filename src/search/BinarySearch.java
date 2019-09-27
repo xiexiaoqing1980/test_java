@@ -1,4 +1,4 @@
-package test02;
+package search;
 
 import java.util.Arrays;
 import java.util.Collections;

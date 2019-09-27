@@ -1,5 +1,6 @@
 package randomtest;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -48,6 +49,10 @@ public class test01 {
 		System.out.println(b);  //-2^32
 		System.out.println(a); // 2147483647
 		System.out.println();
+//		BigInteger b1=new big
+		long sum=(long)a*a;
+		System.out.println(sum);
+		System.out.println(a*a);
 		
 	}
 	

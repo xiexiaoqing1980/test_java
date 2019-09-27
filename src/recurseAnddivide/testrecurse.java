@@ -1,4 +1,4 @@
-package test;
+package recurseAnddivide;
 
 public class testrecurse {
 	public static void main(String[] args) {

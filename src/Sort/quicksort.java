@@ -44,7 +44,7 @@ public class quicksort {
 		sort(arr,i+1,right);
 	}
 	
-	 static void sort2(int[] arr,int left,int right) {
+	public static void sort2(int[] arr,int left,int right) {
 		// TODO Auto-generated method stub
 		int i=left;
 		int j=right;

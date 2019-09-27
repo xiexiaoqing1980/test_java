@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 
+import tree.BinaryTree;
+import tree.TreeNode;
+
 public class PrintNode {
 	public static void main(String[] args) {
 		BinaryTree b1=new BinaryTree(new int[] {1,2,3,4,5},0);

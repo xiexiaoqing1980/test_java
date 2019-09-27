@@ -1,4 +1,4 @@
-package test;
+package tree;
 
 public class BinaryTree {
 	public TreeNode root = null;

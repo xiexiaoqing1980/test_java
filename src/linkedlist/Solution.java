@@ -1,4 +1,4 @@
-package LInkList;
+package linkedlist;
 
 public class Solution {
 	
