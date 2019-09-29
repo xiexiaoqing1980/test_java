@@ -13,6 +13,7 @@ import org.hamcrest.core.IsInstanceOf;
 import org.junit.Test;
 
 import algorithm.UItest;
+import tree.TreeNode;
 
 public class test01 {
 	
@@ -98,9 +99,20 @@ public class test01 {
 		String str=".677.9877";
 		str=str.replace('.', '_');
 		System.out.print(str);
-		System.out.println(String.format("%%%s", "aa"));  //%%×ªÒå% £º_677_9877%aa
+		System.out.println(String.format("%%%s", "aa"));  //%%×ªï¿½ï¿½% ï¿½ï¿½_677_9877%aa
 		Object[] a= {"aa",2};
 		System.out.println(String.format("%1$s %2$d %%s", a));
+		
+	}
+	
+	@Test
+	public void test08()  {
+		LinkedList<Integer> stack = new LinkedList<>();
+		stack.push(1);
+		stack.push(2);
+		stack.pop();
+		stack.pop();
+		
 		
 	}
 	
